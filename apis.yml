@@ -1,7 +1,25 @@
 aid: ornikar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ornikar.png
 name: Ornikar
-description: 'Ornikar is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Ornikar is a French online driving school and insurance company that guides
+  consumers from earning their driving permit through to car, home, and pet insurance.
+  Founded in France, it offers highway-code (code de la route) training, driving lessons,
+  accelerated permit programs, point-recovery courses, and corporate road-safety training,
+  alongside auto, home, and pet insurance products and CPF financing. Surfaced as a
+  portfolio company of Partech and added to the API Evangelist network as a stub for
+  enrichment. Sector: Consumer. No public developer API surface was found during the
+  enrichment pass; only domain-security signals were probed.'
 url: https://raw.githubusercontent.com/api-evangelist/ornikar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Insurance
+- Driving School
+- Education
+- InsurTech
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ornikar-domain-security.yml
 - type: Website
   url: https://www.ornikar.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
